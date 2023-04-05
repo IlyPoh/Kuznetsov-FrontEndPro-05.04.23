@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  font-family: $ff-poppins;
+  color: $color-white;
+}
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body {
+  min-height: 100vh;
+  font-family: $ff-poppins;
+  font-size: 16px;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-yellow;
+  }
+}
