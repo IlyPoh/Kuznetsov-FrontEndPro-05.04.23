@@ -58,7 +58,7 @@ export class SmileCounter extends Component {
               </div>
             ) : (
               <div className="smile-vote-winner-section-result">
-                {SVT.not_enought}
+                {SVT.not_enough}
               </div>
             )}
           </div>

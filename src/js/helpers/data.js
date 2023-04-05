@@ -43,5 +43,5 @@ export const SMILE_VOTE_TEXT = {
   button: 'Vote',
   choose_winner: 'Choose winner',
   winner: 'Winner is:',
-  not_enought: 'Not enought votes',
+  not_enough: 'Not enough votes',
 };
