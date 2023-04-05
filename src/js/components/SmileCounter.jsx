@@ -56,7 +56,11 @@ export class SmileCounter extends Component {
               <div className="smile-vote-winner-section-result">
                 {SVT.winner} {this.state.winner.name}
               </div>
-            ) : null}
+            ) : (
+              <div className="smile-vote-winner-section-result">
+                {SVT.not_enought}
+              </div>
+            )}
           </div>
         </div>
       </div>
