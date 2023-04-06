@@ -52,7 +52,7 @@ export class SmileCounter extends Component {
             >
               {SVT.choose_winner}
             </button>
-            {this.state.winner !== null ? (
+            {this.state.winner ? (
               <div className="smile-vote-winner-section-result">
                 {SVT.winner} {this.state.winner.name}
               </div>
