@@ -38,7 +38,7 @@ export class SmileCounter extends Component {
                 <div className="smile-vote-item-counter">{smile.votes}</div>
                 <button
                   className="btn smile-vote-item-button"
-                  onClick={this.vote.bind(this, smile.id)}
+                  onClick={() => this.vote(smile.id)}
                 >
                   {SVT.button}
                 </button>
@@ -48,7 +48,7 @@ export class SmileCounter extends Component {
           <div className="smile-vote-winner-section">
             <button
               className="btn smile-vote-winner-section-button"
-              onClick={this.getWinner.bind(this)}
+              onClick={() => this.getWinner()}
             >
               {SVT.choose_winner}
             </button>
