@@ -11,9 +11,10 @@ body {
   min-height: 100vh;
   font-family: $ff-poppins;
   font-size: 16px;
+  background: $color-grey;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
@@ -21,6 +22,6 @@ a {
   transition: color 0.3s ease;
 
   &:hover {
-    color: $color-yellow;
+    color: $color-orange;
   }
 }

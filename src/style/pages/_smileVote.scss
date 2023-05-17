@@ -1,0 +1,87 @@
+.smile-vote {
+  .container {
+    padding: 0 1.5rem 2rem;
+  }
+  &-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    color: $color-orange;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 425px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0 0 3px 1px $color-shadow;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    &-image {
+      font-size: 5rem;
+    }
+
+    &-counter {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-shadow-white;
+    }
+
+    &-button {
+      font-size: 1.5rem;
+      color: $color-orange;
+      padding: 0.5rem 2.5rem;
+      border: none;
+      box-shadow: 0 0 3px 1px $color-shadow;
+
+      transition: color $defaultTransition, box-shadow $defaultTransition,
+        background $defaultTransition;
+
+      &:hover {
+        background: $color-orange;
+        color: $color-black;
+      }
+    }
+  }
+  &-winner-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    &-button {
+      font-size: 2.5rem;
+      padding: 1rem 3rem;
+
+      transition: color $defaultTransition, background $defaultTransition;
+
+      &:hover {
+        background: $color-orange;
+        color: $color-black;
+      }
+    }
+    &-result {
+      font-size: 3rem;
+    }
+  }
+}
